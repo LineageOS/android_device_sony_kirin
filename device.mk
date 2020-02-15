@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+
 # call the proprietary setup
 $(call inherit-product, vendor/sony/kirin/kirin-vendor.mk)
 
