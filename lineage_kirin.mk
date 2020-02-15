@@ -18,22 +18,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from pioneer device
-$(call inherit-product, device/sony/pioneer/device.mk)
+# Inherit from kirin device
+$(call inherit-product, device/sony/kirin/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_pioneer
-PRODUCT_DEVICE := pioneer
+PRODUCT_NAME := lineage_kirin
+PRODUCT_DEVICE := kirin
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia XA2
+PRODUCT_MODEL := Xperia 10
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="H3113-user 8.0.0 50.1.A.4.76 2209478692 release-keys"
+    PRIVATE_BUILD_DESC="I3113-user 9 53.0.A.14.47 1552305509 release-keys"
 
-BUILD_FINGERPRINT := Sony/H3113/H3113:8.0.0/50.1.A.4.76/2209478692:user/release-keys
+BUILD_FINGERPRINT := Sony/I3113_EEA/I3113:9/53.0.A.14.47/1552305509:user/release-keys

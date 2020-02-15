@@ -22,6 +22,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),pioneer)
+ifeq ($(TARGET_DEVICE),kirin)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

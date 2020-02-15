@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pioneer.mk
+    $(LOCAL_DIR)/lineage_kirin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_pioneer-user \
-    lineage_pioneer-userdebug \
-    lineage_pioneer-eng
+    lineage_kirin-user \
+    lineage_kirin-userdebug \
+    lineage_kirin-eng
