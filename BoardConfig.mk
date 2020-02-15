@@ -19,6 +19,9 @@
 
 DEVICE_PATH := device/sony/kirin
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := kirin_defconfig
 
