@@ -88,13 +88,16 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2_PROTECTED_VBAT" acdb_id="150"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_1" acdb_id="151"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_2" acdb_id="152"/>
-        <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" acdb_id="41"/>
+        <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" acdb_id="36"/>
         <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_SPEAKER" acdb_id="101"/>
         <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_ASR" acdb_id="8"/>
         <device name="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR" acdb_id="4"/>
         <device name="SND_DEVICE_IN_SONY_MONO_MIC" acdb_id="4"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_HANDSET_HAC" acdb_id="31"/>
-        <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER" acdb_id="101"/>
+        <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_VOIP" acdb_id="122"/>
+        <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_WB_VOIP" acdb_id="123"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="122"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="123"/>
+        <device name="SND_DEVICE_IN_SONY_VOIP_SPEAKER_MIC" acdb_id="43"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_AFE_PROXY" backend="afe-proxy" interface="PROXY_PORT_RX"/>
@@ -221,66 +224,30 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_ANC_HEADSET" backend="speaker-and-headphones" interface="INT4_MI2S_RX-and-INT0_MI2S_RX"/>
 
         <!-- SOMC out devices -->
-        <device name="SND_DEVICE_OUT_SONY_BT_A2DP" backend="bt-a2dp" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_BT_SCO" backend="bt-sco" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_BT_SCO_WB" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_HANDSET" interface="INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_HDMI" backend="hdmi" interface="HDMI_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_HEADPHONES" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER" interface="INT4_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER_AND_BT_A2DP" backend="ringtone-speaker-and-bt-a2dp" interface="INT4_MI2S_RX-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_OUT_SONY_RINGTONE_SPEAKER_AND_HEADPHONES" backend="ringtone-speaker-and-headphones" interface="INT4_MI2S_RX-and-INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER" interface="INT4_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_AND_BT_A2DP" backend="speaker-and-bt-a2dp" interface="INT4_MI2S_RX-and-SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_AND_HEADPHONES" interface="INT4_MI2S_RX-and-INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_SPEAKER_REVERSE" interface="INT4_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_USB_HEADPHONES" backend="usb-headphones" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_USB_HEADSET" backend="usb-headset" interface="USB_AUDIO_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_HANDSET" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SONY_VOICE_HANDSET_HAC" interface="INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_HEADPHONES" interface="INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_SPEAKER" interface="INT4_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_FULL_HEADPHONES" interface="INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_HANDSET" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_SPEAKER" backend="voice-speaker" interface="INT4_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_VCO_HEADPHONES" interface="INT0_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TX" interface="USB_AUDIO_RX"/>
 
         <!-- SOMC in devices -->
         <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC" backend="bt-sco" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC_VOIP" backend="bt-sco" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_SONY_BT_SCO_DSP_MIC_WB_VOIP" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC" backend="bt-sco" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_VOIP" backend="bt-sco" interface="SLIMBUS_7_TX"/>
-        <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_WB" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_SONY_BT_SCO_MIC_WB_VOIP" backend="bt-sco-wb" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_IN_SONY_CAMCORDER" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_CAPTURE_FM" backend="capture-fm" interface="SLIMBUS_8_TX"/>
-        <device name="SND_DEVICE_IN_SONY_EXTERNAL_STEREO_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_HANDSET_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_HEADSET_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_ASR" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_MONO_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_SPEAKER_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_STEREO_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_USB_HEADSET_MIC" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_DMIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_HEADSET_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_RX" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_SPEAKER_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_TTY_FULL_HEADSET_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_TTY_HCO_HEADSET_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_VOICE_TTY_VCO_HANDSET_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_VOIP_DMIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_VOIP_SPEAKER_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_VOIP_HEADSET_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_SONY_INCALL_VOICE_RECORD" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_UNPROCESSED_HEADSET_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_UNPROCESSED_MIC" interface="INT3_MI2S_TX"/>
-        <device name="SND_DEVICE_IN_SONY_UNPROCESSED_STEREO_MIC" interface="INT3_MI2S_TX"/>
         </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>

@@ -427,10 +427,12 @@
 
     <path name="deep-buffer-playback">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="deep-buffer-playback handset">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="INT0_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
@@ -548,6 +550,7 @@
 
     <path name="low-latency-playback">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="low-latency-playback voice-speaker">
@@ -556,6 +559,7 @@
 
     <path name="low-latency-playback handset">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <ctl name="INT0_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="low-latency-playback voice-handset">
@@ -685,6 +689,7 @@
 
     <path name="audio-ull-playback">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia3" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="audio-ull-playback speaker-protected">
@@ -697,6 +702,7 @@
 
     <path name="audio-ull-playback handset">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia3" value="1" />
+        <ctl name="INT0_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="audio-ull-playback voice-handset">
@@ -775,10 +781,12 @@
 
     <path name="compress-offload-playback">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback handset">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+        <ctl name="INT0_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback voice-handset">
@@ -873,10 +881,12 @@
 
     <path name="compress-offload-playback2">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia7" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback2 handset">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia7" value="1" />
+        <ctl name="INT0_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback2 voice-handset">
@@ -955,6 +965,7 @@
 
     <path name="compress-offload-playback3">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback3 hdmi">
@@ -1029,6 +1040,7 @@
 
     <path name="compress-offload-playback4">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia11" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback4 hdmi">
@@ -1104,6 +1116,7 @@
 
     <path name="compress-offload-playback5">
         <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia12" value="1" />
+        <ctl name="INT4_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="compress-offload-playback5 hdmi">
@@ -1946,7 +1959,7 @@
     </path>
 
     <path name="adc2">
-        <ctl name="ADC2 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="3" />
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
@@ -2061,6 +2074,10 @@
     </path>
 
     <path name="sidetone-headphones">
+        <path name="sidetone-iir" />
+        <ctl name="RX1 MIX2 INP1" value="IIR1" />
+        <ctl name="RX2 MIX2 INP1" value="IIR1" />
+        <ctl name="IIR1 INP1 Volume" value="53" />
     </path>
 
     <path name="sidetone-handset">
@@ -2604,7 +2621,7 @@
     </path>
 
     <path name="voice-tty-vco-handset-mic">
-        <path name="voice-dmic-ef" />
+        <path name="adc1" />
     </path>
 
     <path name="incall-music">
@@ -2650,7 +2667,6 @@
 
     <path name="unprocessed-handset-mic">
         <path name="handset-mic" />
-        <ctl name="DEC1 Volume" value="72" />
     </path>
 
     <path name="unprocessed-mic">
@@ -2753,11 +2769,6 @@
     </path>
 
     <path name="low-latency-playback speaker-and-bt-a2dp">
-        <path name="low-latency-playback bt-a2dp" />
-        <path name="low-latency-playback" />
-    </path>
-
-    <path name="low-latency-playback ringtone-speaker-and-bt-a2dp">
         <path name="low-latency-playback bt-a2dp" />
         <path name="low-latency-playback" />
     </path>
