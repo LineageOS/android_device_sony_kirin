@@ -24,4 +24,22 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),kirin)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+include $(CLEAR_VARS)
+
+BDWLAN_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin
+$(BDWLAN_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "bdwlan link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
+
+BDWLANB1_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlanb1.bin
+$(BDWLANB1_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "bdwlanb1 link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(BDWLAN_SYMLINK) $(BDWLANB1_SYMLINK)
 endif
