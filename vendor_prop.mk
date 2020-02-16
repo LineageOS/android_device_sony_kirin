@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.expose.aux=1
+
 # SEMC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.semc.product.model=I3113 \
