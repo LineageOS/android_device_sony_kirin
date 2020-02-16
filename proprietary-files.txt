@@ -234,6 +234,10 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
+# Keyprov
+vendor/bin/keyprovd
+vendor/etc/init/init.keyprovd.rc
+
 # Secd
 vendor/etc/firmware/tzsuntory.b00
 vendor/etc/firmware/tzsuntory.b01
