@@ -395,6 +395,9 @@ vendor/etc/init/sct_service.rc
 vendor/etc/sensors/sensor_def_somc_product.conf
 vendor/etc/sensors/sensor_def_somc_platform.conf
 
+# Thermal
+vendor/etc/thermal-engine.conf
+
 # WiFi
 vendor/bin/cnss-daemon
 vendor/etc/wifi/bdwlan.bin
