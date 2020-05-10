@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from I3113_Customized UK_1317-9617_53.0.A.14.47_R5A
+# All unpinned blobs below are extracted from I3113_Customized ZA_1317-9072_53.1.A.2.2_R2C
 
 # Audio ACDB
 vendor/etc/acdbdata/Sony/Sony_ganges_Bluetooth_cal.acdb
@@ -77,6 +77,7 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -95,6 +96,7 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libseemore.so
 
 # Camera actuators
 vendor/lib/libactuator_lc898214xd.so
@@ -112,6 +114,7 @@ vendor/lib/libchromatix_s5k3l6_cpp_video.so
 vendor/lib/libchromatix_s5k3l6_default.so
 vendor/lib/libchromatix_s5k3l6_hfr_120_3a.so
 vendor/lib/libchromatix_s5k3l6_hfr_60_3a.so
+vendor/lib/libchromatix_s5k3l6_other.so
 vendor/lib/libchromatix_s5k3l6_postproc.so
 vendor/lib/libchromatix_s5k3l6_snapshot.so
 vendor/lib/libchromatix_s5k3l6_video.so
@@ -133,6 +136,7 @@ vendor/lib/libchromatix_s5k4h7yx_cpp_mms.so
 vendor/lib/libchromatix_s5k4h7yx_cpp_snapshot.so
 vendor/lib/libchromatix_s5k4h7yx_cpp_video.so
 vendor/lib/libchromatix_s5k4h7yx_default.so
+vendor/lib/libchromatix_s5k4h7yx_other.so
 vendor/lib/libchromatix_s5k4h7yx_postproc.so
 vendor/lib/libchromatix_s5k4h7yx_snapshot.so
 vendor/lib/libchromatix_s5k4h7yx_video.so
