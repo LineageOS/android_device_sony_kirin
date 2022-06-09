@@ -375,6 +375,7 @@ vendor/bin/keyprovd
 vendor/etc/init/init.keyprovd.rc
 
 # Secd
+vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
 vendor/etc/firmware/tzsuntory.b00
 vendor/etc/firmware/tzsuntory.b01
 vendor/etc/firmware/tzsuntory.b02
@@ -384,7 +385,6 @@ vendor/etc/firmware/tzsuntory.b05
 vendor/etc/firmware/tzsuntory.b06
 vendor/etc/firmware/tzsuntory.b07
 vendor/etc/firmware/tzsuntory.mdt
-vendor/bin/hw/vendor.semc.hardware.secd@1.0-service
 vendor/etc/init/vendor.semc.hardware.secd@1.0-service.rc
 vendor/lib/libdevice_security_vendor.so
 vendor/lib/libsuntory.so
@@ -398,8 +398,8 @@ vendor/bin/sct_service
 vendor/etc/init/sct_service.rc
 
 # Sensors
-vendor/etc/sensors/sensor_def_somc_product.conf
 vendor/etc/sensors/sensor_def_somc_platform.conf
+vendor/etc/sensors/sensor_def_somc_product.conf
 
 # Thermal
 vendor/etc/thermal-engine.conf
