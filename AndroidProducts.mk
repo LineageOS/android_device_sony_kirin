@@ -16,8 +16,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_kirin.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_kirin-user \
-    lineage_kirin-userdebug \
-    lineage_kirin-eng
