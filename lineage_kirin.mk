@@ -34,6 +34,5 @@ PRODUCT_MANUFACTURER := Sony
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="I3113-user 9 53.0.A.14.47 1552305509 release-keys"
-
-BUILD_FINGERPRINT := Sony/I3113_EEA/I3113:9/53.0.A.14.47/1552305509:user/release-keys
+    BuildDesc="I3113-user 9 53.0.A.14.47 1552305509 release-keys" \
+    BuildFingerprint=Sony/I3113_EEA/I3113:9/53.0.A.14.47/1552305509:user/release-keys
