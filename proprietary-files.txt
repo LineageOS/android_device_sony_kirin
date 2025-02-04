@@ -408,5 +408,5 @@ vendor/etc/thermal-engine.conf
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/etc/wifi/bdwlan.bin
-vendor/etc/wifi/bdwlanb1.bin
+vendor/etc/wifi/bdwlan.bin;SYMLINK=vendor/firmware/wlan/qca_cld/bdwlan.bin
+vendor/etc/wifi/bdwlanb1.bin;SYMLINK=vendor/firmware/wlan/qca_cld/bdwlanb1.bin
