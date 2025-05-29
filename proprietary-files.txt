@@ -97,7 +97,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib64/libcdsprpc.so
 
 # Camera actuators
 vendor/lib/libactuator_lc898214xd.so
